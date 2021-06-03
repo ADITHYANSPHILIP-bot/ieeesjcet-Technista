@@ -1,3 +1,11 @@
+
 .carousel-item{
-    height: 42em;
+    height: 45em;
+}
+.sec_1 .navbar{
+    height: 7em;
+}
+
+.sec_2 .navbar{
+    height: 4em;
 }
