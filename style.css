@@ -1,9 +1,20 @@
 
 .carousel-item{
-    height: 45em;
+    height: 36em;
+    margin-top: 112px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 320px){                 /* screen- moblie, lap,etc print- printers, speech- screen readers */
+    
+    .carousel-item{
+        width: 100% !important;
+        height: auto !important ;
+     
+    }
+   }   
+
 .sec_1 .navbar{
-    height: 7em;
+    height: 6em;
 }
 
 .sec_2 .navbar{
@@ -15,3 +26,215 @@
 .carousel .font-h{
     font-size:4em
 }
+
+.tess{
+    display: flex;
+    align-items: center;
+}
+
+
+.title{
+    font-size:2em;
+    color:#8c0c60;
+    display:block;
+    }
+    
+    .sub-title{
+    font-size:0.8em;
+    color:gray;
+    display:block;
+    }
+    
+    .btn1{
+    padding:10px 20px;
+    background:transparent;
+    border:1px solid #8c0c3c;
+    color:#8c0c3c;
+    border-radius:3px;
+    outline:none;
+    transition:0.5s;
+    }
+    
+    .btn1:hover{
+    background:#8c0c3c;
+    color:#fff;
+    }
+    
+    .btn2{
+    padding:10px 20px;
+    border-radius:3px;
+    background:#1e1e1e;
+    border:1px solid #1e1e1e;
+    color:#fff;
+    outline:none;
+    transition:0.5s;
+    }
+    
+    .btn2:hover{
+    background:transparent;
+    color:#1e1e1e;
+    }
+    
+    .title:before{
+    content:" ";
+    font-family:"FontAwesome";
+    font-size:30px;
+    }
+    
+    a{
+    text-decoration:none;
+    }
+    
+    .section2,.section3{
+    width:90%;
+    margin:5% 0%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    .section2 table,.section3 table{
+    width:100%;
+    }
+    
+    .section2 table td,.section3 table td{
+    width:50%;
+    }
+    
+    .section2 table td img,.section3 table td img{
+    width:80%;
+    height:70%;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    }
+    
+    .section3 table td img{
+    float:right;
+    }
+    
+    
+    @media (max-width:720px){
+    .section2 table td, .section3 table td{
+    width:100%;
+    display:block;
+    }
+    .section3 table td img{
+    float:none;
+    margin-top:4%;
+    }
+    .section2 table td img,.section3 table td img{
+    width:100%;
+    height:60%;
+    }
+    }
+
+@media (max-width:300px){
+.section2,.section3{
+font-size:12px;
+}
+.section3 table td img{
+    float:none;
+    margin-top:8%;
+    }
+.btn1,.btn2{
+padding:5px 10px;
+}
+}
+.footer{
+position:fixed;
+box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+background:#1e1e1e;
+padding:10px 20px;
+color:gray;
+font-size:13px;
+position:fixed;
+bottom:10px;
+right:0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px){                 /* screen- moblie, lap,etc print- printers, speech- screen readers */
+    
+    .schedule .card-img{
+        width: 426px !important;
+        height: 1500px !important ;
+     
+    }
+   }   
+
+.btn-light, .btn-dark{
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+
+
+
+
+
+.about-section1{
+    background: url(/pics/workshopsj.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    height: 36em;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+
+   
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+.poc-add{
+    display: flex;
+    text-align: center;
+}  
