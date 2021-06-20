@@ -1,4 +1,27 @@
 
+ 
+ *{
+    font-family: 'Poppins', sans-serif;
+ }
+
+ .tess_abt, .tess_spk, .schedule, .sponsors, .registration, .contact{
+     background-color: rgba(32, 33, 36, 1);
+     color: #1EA5FC;
+ }
+ .car_txt{
+    color: #1EA5FC;
+    
+    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+ }
+ 
+ .btn{
+    background-color: #1EA5FC;
+   color: black;
+   transition: transform 0.5s;
+   
+}
 .carousel-item{
     height: 36em;
     margin-top: 112px;
@@ -120,38 +143,97 @@
 }
 
 
+.mrr{
+    max-height: 50vh;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgb(0,0,0,0,0), rgba(0,0,0,0.4));
+}
+.crd_spk{
+    width: 25em;
+    position: relative;
+}
 
 
+.crd_spk img{
+    width: 100%;
+}
+.info{
+    width: 90%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 39x;
+    background: #001115;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
 
+}
+.info p{
+    font-size: 12px;
+    margin: 6px, 0;
+}
+.info .icons{
+    font-size: 20px;
+    cursor: pointer;
+}
+.pic_spk{
+    filter: grayscale(100%);
+}
+
+.info .icons{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.crd_spk:hover .icons{
+    max-height: 100px;
+}
+
+.layers{
+    width: 84%;
+    position:absolute;
+    top: 56px;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.crd_spk:hover .layers{
+    max-height: 500px;
+    
+}
 
 .about-section1{
-    background: url(pics/workshopsj.jpg) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwYRYEwRuVvmOugmvafeLrB7bwRMcB5eMkAg&usqp=CAU) no-repeat left;
+    background-size: 40%;
+    background-color: rgba(32, 33, 36, 1);
+    color: #1EA5FC;
+   
+    
     height: 36em;
 }
 
 .inner-container{
-    width: 55%;
+    width: 60%;
     float: right;
-    background-color: #fdfdfd;
+    background-color: rgba(32, 33, 36, 1);
+    color: #1EA5FC;
     padding: 150px;
 }
 
 .inner-container h1{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
    
 }
 
 .text{
-    font-size: 13px;
-    color: #545454;
+    
+    
     line-height: 30px;
     text-align: justify;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .skills{
@@ -189,3 +271,12 @@
     display: flex;
     text-align: center;
 }  
+.ftr_sz img{
+width: 200px;
+}
+
+@media screen and (max-width:600px){
+    .ftr_sz img{
+        width: 100px;
+        }   
+}
